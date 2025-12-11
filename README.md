@@ -8,7 +8,7 @@ How to use:
 2. Add the files above using "Add file → Create new file".
 3. Commit to the `main` branch.
 4. In the repository Settings → Pages, set the source to `main` branch and `/ (root)` folder, then Save.
-5. Wait a minute and visit https://30AU.github.io (or https://30AU.github.io/REPO-NAME for a project site).
+5. Wait a minute and visit https://30AU.github.io (or https://30AU.github.io/portfolio for a project site).
 
 Notes:
 - `jekyll-remote-theme` is supported by GitHub Pages, so GitHub will fetch and use Minimal Mistakes automatically.

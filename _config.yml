@@ -1,0 +1,33 @@
+title: "30AU — Portfolio"
+description: "A tiny portfolio site using Minimal Mistakes via remote_theme"
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-remote-theme
+
+# Project site settings
+url: "https://30AU.github.io"
+baseurl: "/portfolio"
+
+# Use kramdown (recommended) and do not set theme so remote_theme is used
+markdown: kramdown
+theme: null
+
+# Minimal navigation (explicit URLs include the baseurl)
+nav:
+  - title: "Home"
+    url: "/portfolio/"
+  - title: "About"
+    url: "/portfolio/about/"
+  - title: "Projects"
+    url: "/portfolio/projects/"
+
+# Simple defaults so pages use the theme's default layout unless overridden
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Tiny footer/copyright string (renders the current year)
+copyright: "© {{ site.time | date: '%Y' }} 30AU"

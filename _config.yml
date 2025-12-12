@@ -8,11 +8,10 @@ plugins:
 url: "https://30AU.github.io"
 baseurl: "/portfolio"
 
-# Use kramdown (recommended) and do not set theme so remote_theme is used
 markdown: kramdown
 theme: null
 
-# Minimal navigation (explicit URLs include the baseurl)
+# Navigation: Home, About, Projects, Contact, and an external GitHub link
 nav:
   - title: "Home"
     url: "/portfolio/"
@@ -20,8 +19,13 @@ nav:
     url: "/portfolio/about/"
   - title: "Projects"
     url: "/portfolio/projects/"
+  - title: "Contact"
+    url: "/portfolio/contact/"
+  - title: "GitHub"
+    url: "https://github.com/30AU"
+    external: true
 
-# Simple defaults so pages use the theme's default layout unless overridden
+# Keep pages using the theme's default layout
 defaults:
   - scope:
       path: ""
@@ -29,5 +33,4 @@ defaults:
     values:
       layout: "default"
 
-# Tiny footer/copyright string (renders the current year)
 copyright: "© {{ site.time | date: '%Y' }} 30AU"
